@@ -4,10 +4,10 @@ function bubble_sort(data: number[], reverse: boolean=false): number[] {
   /**
    * Bubble sorting function.
    * Args:
-      list (string | number)[]: list to be ordered.
+      data number[]: list to be ordered.
         reverse (bool, optional): ascending(False) or descending(True) order. Defaults to False.
     Returns:
-        list (string | number)[]: ordered list.
+        number[]: ordered list.
    */
   const n: number = data.length;
   for (let i = 0; i < n; i++) {
