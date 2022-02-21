@@ -2,7 +2,7 @@
 function bubble_sort(data, reverse = false) {
     const n = data.length;
     for (let i = 0; i < n; i++) {
-        for (let j = 0; j < n - 1; j++) {
+        for (let j = 0; j < n - i - 1; j++) {
             if (data[j] > data[j + 1]) {
                 let temp = data[j];
                 data[j] = data[j + 1];
