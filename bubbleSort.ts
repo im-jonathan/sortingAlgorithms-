@@ -11,12 +11,17 @@ function bubble_sort(data: number[], reverse: boolean=false): number[] {
    */
   const n: number = data.length;
   for (let i = 0; i < n; i++) {
+    let swap: boolean = false;
     for (let j = 0; j < n-i-1; j++) {
       if (data[j] > data[j + 1]) {
         let temp = data[j];
-        data[j] = data[j + 1]
-        data[j + 1] = temp
+        data[j] = data[j + 1];
+        data[j + 1] = temp;
+        swap = true;
       }
+    }
+    if (!swap) {
+      break
     }
   }
   if (reverse) {

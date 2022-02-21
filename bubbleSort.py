@@ -11,10 +11,13 @@ def bubble_sort(data: list, reverse: bool = False) -> list:
     n = len(data)
     # 1st loop goes through the list as many times as there are elements
     for i in range(n):
+        swap = False
         for j in range(n-i-1):
             if data[j] > data[j + 1]:
                 data[j], data[j + 1] = data[ j + 1], data[j]
+                swap = True
+        if not swap:
+            break
     if reverse:
         data = data[::-1]
     return data
-
