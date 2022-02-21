@@ -18,6 +18,3 @@ def bubble_sort(data: list, reverse: bool = False) -> list:
         data = data[::-1]
     return data
 
-
-a = [43, 46, 8, 7, 6, 18, 9, 33, 41, 4, 39, 20, 19, 10, 25, 1]
-print(bubble_sort(a))
