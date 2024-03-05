@@ -49,10 +49,3 @@ function counting_sort(array, exp) {
         array[i] = output[i];
     }
 }
-const myArray = [
-    12, 47, -46, 28, 35, 30, 69, -100, 38, -52, 44, -3, 33, -34, -94, 58, 32, -74,
-    -40, 27, -75, 57, 16, -27, 82, 65, -77, -6, 98, -28, -22, 3, 91, 40, 11, -44,
-    -67, -72, -90, -35, 14, -16, 49, -11, -66, 13, 46, 77, -58, 53,
-];
-const sortedArray = radixSortSigned(myArray);
-console.log(sortedArray);
