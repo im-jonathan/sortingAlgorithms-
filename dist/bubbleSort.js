@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.bubble_sort = void 0;
 function bubble_sort(data, reverse = false) {
     const n = data.length;
     for (let i = 0; i < n; i++) {
@@ -24,3 +26,4 @@ function bubble_sort(data, reverse = false) {
     }
     return data;
 }
+exports.bubble_sort = bubble_sort;

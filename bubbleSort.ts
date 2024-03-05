@@ -34,3 +34,5 @@ function bubble_sort(data: number[], reverse: boolean=false): number[] {
   }
   return data
 }
+
+export { bubble_sort }
